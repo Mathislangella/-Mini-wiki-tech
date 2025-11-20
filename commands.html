@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Commandes Git essentielles</title>
+</head>
+<body>
+	<main>
+		<h1>Commandes Git essentielles</h1>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Commande Git</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><code class="language-text">git config –global user.name &lt;nom&gt;</code></td>
+					<td>Modifie le nom d’utilisateur dans votre config git</td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git config –global user.email &lt;mail&gt;</code></td>
+					<td>Modifie l’adresse email dans votre configuration git</td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git init &lt;le_nom_de_votre_repo_git&gt;</code></td>
+					<td>Initialise un nouveau repo git</td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git init --bare &lt;nom_de_depot&gt;</code></td>
+					<td>Initialise un repo sans working tree</td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git clone &lt;url_du_depot_git&gt;</code></td>
+					<td>Clone un repo git</td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git add &lt;nom_du_ou_des_fichier(s)&gt;</code></td>
+					<td>Ajoute les fichiers spécifiés à l’index</td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git add *</code></td>
+					<td>Ajoute tous les fichiers à l’index</td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git add --patch *</code></td>
+					<td>Ouvre le mode interactif de git add</td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git commit</code></td>
+					<td>Permet de commit des modifications</td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git commit -m &lt;message_de_commit&gt;</code></td>
+					<td>Permet de commit en donnant un message de commit</td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git commit -a</code></td>
+					<td>Add &amp; commit tous les fichiers modifiés ou supprimés</td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git diff</code></td>
+					<td>Montre les modifications dans l’index non commitées</td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git diff -–staged</code></td>
+					<td><code class="language-text">--staged</code> est un synonyme de <code class="language-text">--cached</code></td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git diff &lt;branche_1&gt; &lt;branche_2&gt;</code></td>
+					<td>Montre les différences entre deux branches</td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git reset &lt;fichier&gt;</code></td>
+					<td>L’inverse de <code class="language-text">git add</code></td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git reset &lt;hash_du_commit&gt;</code></td>
+					<td>Retourne au commit choisi</td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git reset –hard &lt;hash_du_commit&gt;</code></td>
+					<td>Pareil mais supprime tous les changements</td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git status</code></td>
+					<td>Affiche les statuts du working tree</td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git rm &lt;fichier(s)&gt;</code></td>
+					<td>Supprime les fichiers du working tree et de l’index</td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git log</code></td>
+					<td>Affiche l’historique des commits</td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git log –follow &lt;nom_du_fichier&gt;</code></td>
+					<td>Affiche l’historique des changements du fichier</td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git show &lt;hash_du_commit&gt;</code></td>
+					<td>Affiche les détails d’un commit</td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git tag &lt;hash_du_commit&gt;</code></td>
+					<td>Donne un tag au commit</td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git branch</code></td>
+					<td>Liste toutes les branches locales du repo actuel</td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git branch &lt;branche&gt;</code></td>
+					<td>Crée une nouvelle branche</td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git branch -d &lt;branche&gt;</code></td>
+					<td>Supprime une certaine branche</td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git checkout &lt;branche&gt;</code></td>
+					<td>Permet de changer de branche</td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git checkout -b &lt;branche&gt;</code></td>
+					<td>Crée une nouvelle branche et passe dessus</td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git merge &lt;branche&gt;</code></td>
+					<td>Merge une branche à la branche actuelle</td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git remote add &lt;nom&gt; &lt;lien_git&gt;</code></td>
+					<td>Ajoute un serveur git en lui donnant un nom remote</td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git push</code></td>
+					<td>Push le commit sur git</td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git push &lt;remote&gt; &lt;branche&gt;</code></td>
+					<td>Push le commit en spécifiant un repo et une branche</td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git push –all &lt;remote&gt;</code></td>
+					<td>Push tous les commits de toutes branches sur remote</td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git pull &lt;branche&gt;</code></td>
+					<td>Pull les derniers commits d’une branche</td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git stash</code></td>
+					<td>Met de côté les modifications présentes</td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git stash save</code></td>
+					<td>Pareil que <code class="language-text">git stash</code> mais plus explicite</td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git stash pop</code></td>
+					<td>Récupère les fichiers sauvés dans la stash</td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git stash list</code></td>
+					<td>Liste les différentes stashes sauvées</td>
+				</tr>
+				<tr>
+					<td><code class="language-text">git stash drop</code></td>
+					<td>Supprime une stash préalablement sauvée</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<p>Référence : <a href="https://www.commentcoder.com/commandes-git/" target="_blank" rel="noopener">commentcoder — Commandes Git</a></p>
+
+	</main>
+</body>
+</html>

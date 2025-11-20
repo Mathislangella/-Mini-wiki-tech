@@ -9,3 +9,4 @@ Ajoutez un fichier README.md contenant :
 
 Ce wiki présente le workflow Git et les outils
 associés.
+Ce wiki regroupe les commandes Git utiles.
