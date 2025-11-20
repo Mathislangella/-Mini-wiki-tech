@@ -42,3 +42,13 @@ p {
     font-size: 1.05rem;
     line-height: 1.8;
 }
+a { 
+    color: #0280ff;
+     text-decoration: none; 
+}
+
+table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+th, td { padding: 0.6rem; border: 1px solid #e6e6e6; text-align: left; }
+th { background: #f0f4f7; color: #1f2d3d; }
+
+code { background: #f7f7f9; padding: 0.15rem 0.35rem; border-radius: 4px; font-family: Consolas, monospace; }
