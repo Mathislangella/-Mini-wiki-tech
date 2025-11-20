@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explication du workflow Git simple</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Workflow de Branche de fonctionnalité Git</h1>
+    
+    <section>
+        <h2>Principe de base</h2>
+        <p>Le principe de base du workflow de branche de fonctionnalité est que chaque fonctionnalité est développée dans une branche dédiée plutôt que dans la branche principale (main). Grâce à cette encapsulation, plusieurs développeurs peuvent travailler aisément sur une même fonctionnalité sans modifier la base de code principale. Cela signifie également que la branche main ne contiendra jamais de code bugué : un avantage non négligeable pour les environnements d'intégration continue.</p>
+    </section>
+    
+    <section>
+        <h2>Pull Requests et collaboration</h2>
+        <p>L'intégration du développement de fonctionnalités permet également de tirer parti des pull requests, qui sont utilisées pour initier des discussions sur une branche. Les développeurs peuvent ainsi signer une fonctionnalité avant qu'elle ne soit intégrée au projet officiel. Si vous rencontrez un problème alors que vous développez une fonctionnalité, vous pouvez ouvrir une pull request pour demander des suggestions à vos collègues. Grâce aux pull requests, il est extrêmement facile pour votre équipe de donner du feedback sur le travail effectué.</p>
+    </section>
+    
+    <section>
+        <h2>Composabilité et intégration</h2>
+        <p>Le workflow de branche de fonctionnalité Git est un workflow composable qui peut être exploité par d'autres workflows Git de haut niveau. Nous avons discuté d'autres workflows Git sur la page d'aperçu du workflow Git. Le workflow de branche de fonctionnalité Git est axé sur le modèle de branching, autrement dit, il s'agit d'un framework pour la gestion et la création de branches. D'autres workflows sont davantage axés sur les dépôts. Le workflow de branche de fonctionnalité Git peut être intégré à d'autres workflows. Les workflows Gitflow et Git Forking utilisent généralement un workflow de branche de fonctionnalité pour leurs modèles de branching.</p>
+    </section>
+    
+    <section>
+        <h2>Git merge</h2>
+        <p>Dans Git, le merge permet de reconstituer un historique forké. La commande <code>git merge</code> vous permet de sélectionner les lignes de développement indépendantes créées avec <code>git branch</code> et de les intégrer à une seule branche.</p>
+        <p>Remarque : toutes les commandes présentées ci-après font un merge dans la branche courante. La branche courante sera mise à jour pour faire état du merge, tandis que la branche cible restera inchangée. À nouveau, cela signifie que la commande <code>git merge</code> est souvent utilisée en association avec <code>git checkout</code> pour sélectionner la branche courante et <code>git branch -d</code> pour supprimer la branche cible obsolète.</p>
+    </section>
+
+    <footer>
+        <p>Référence : <a href="https://www.atlassian.com/fr/git/tutorials/comparing-workflows/feature-branch-workflow" target="_blank">Atlassian - Git Feature Branch Workflow</a></p>
+    </footer>
+</body>
+</html>
